@@ -4,9 +4,10 @@ import java.awt.event.ActionListener;
 
 public class DetalleUsuario extends JDialog {
     private JPanel contentPane;
-    private JLabel labelEmail;
-    private JLabel labelPais;
-    private JLabel labelPlataforma;
+    private JLabel Email;
+    private JLabel Pais;
+    private JLabel Plataforma;
+    private JLabel TituloUsuario;
     private JButton buttonCerrar;
 
 
@@ -14,9 +15,9 @@ public class DetalleUsuario extends JDialog {
         setContentPane(contentPane);
         setModal(true);
 
-        labelEmail.setText(usuario.getEmail());
-        labelPais.setText(usuario.getPais());
-        labelPlataforma.setText(usuario.getPlataforma());
+        Email.setText(usuario.getEmail());
+        Pais.setText(usuario.getPais());
+        Plataforma.setText(usuario.getPlataforma());
         pack();
         setLocationRelativeTo(null);
         setVisible(true);
